@@ -1,5 +1,5 @@
 import mysql from 'mysql2';
-import * as dotenv from 'dotenv'
+import dotenv from 'dotenv';
 
 dotenv.config()
 
