@@ -45,7 +45,6 @@ CREATE TABLE recommendation_farm (
   daerah VARCHAR(100),
   suhu DECIMAL(8, 2),
   luas_tanah VARCHAR(20),
-  created_at DATETIME,
-  updated_at DATETIME
+  recommendasi_tanaman VARCHAR(20),
 );
 

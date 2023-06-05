@@ -7,6 +7,8 @@ import logs from './middleware/logs.js'
 import diseaseRoute from './route/diseaseRoute.js'
 import plantRoute from './route/plantRoute.js'
 import authRoute from './route/authRoute.js'
+import recommendRoute from './route/recommendRoute.js'
+// import predictionRoute from './route/predictionRoute.js'
 import createError from 'http-errors'
 
 dotenv.config();
@@ -22,6 +24,8 @@ app.use(logs);
 app.use(authRoute);
 app.use(diseaseRoute);
 app.use(plantRoute);
+app.use(recommendRoute);
+// app.use(predictionRoute)
 
 //handling routes yang tidak ditemukan
 app.use((req, res, next) => {

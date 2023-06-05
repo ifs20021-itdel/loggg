@@ -10,7 +10,7 @@ const getDiseaseModel = () => {
 
 // get Data by id
 const getByIdDiseaseModel = (disease_id) => {
-    const SQLQuery = "SELECT * From disease WHERE disease_id=?";
+    const SQLQuery = "SELECT * FROM disease WHERE disease_id=?";
     const values = [disease_id];
 
     return dbPool.execute(SQLQuery, values)
