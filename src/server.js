@@ -8,8 +8,7 @@ import diseaseRoute from './route/diseaseRoute.js'
 import plantRoute from './route/plantRoute.js'
 import authRoute from './route/authRoute.js'
 import recommendRoute from './route/recommendRoute.js'
-// import predictionRoute from './route/predictionRoute.js'
-import createError from 'http-errors'
+
 
 dotenv.config();
 

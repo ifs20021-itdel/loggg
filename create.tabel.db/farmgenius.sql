@@ -23,7 +23,7 @@ CREATE TABLE `disease` (
   `solusi` text 
 );
 
---Tabel prediction
+--Tabel detection
 CREATE TABLE `prediction` (
   `prediction_id` varchar(16) primary key,
   `user_id` varchar(255),
