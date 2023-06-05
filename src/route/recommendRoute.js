@@ -12,7 +12,7 @@ import {
 const router = express.Router();
 
 // Get data
-router.get('/recommend_farm', auth, getRecommend);
+router.get('/recommend_farm', auth, getRecommend)
 
 router.get('/recommend_farm/:recommendation_id', auth, getByIdRecommend);
 
