@@ -1,6 +1,5 @@
 import dbPool from "../config/connection.js"
 
-
 // GET DATA
 const getDiseaseModel = () => {
     const SQLQuery = "SELECT * FROM disease"

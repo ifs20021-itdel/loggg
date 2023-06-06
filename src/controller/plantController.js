@@ -77,7 +77,6 @@ const postPlant = async (req, res) => {
 }
 
 
-
 export {
     getPlant,
     getByIdPlant,

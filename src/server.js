@@ -8,6 +8,9 @@ import diseaseRoute from './route/diseaseRoute.js'
 import plantRoute from './route/plantRoute.js'
 import authRoute from './route/authRoute.js'
 import recommendRoute from './route/recommendRoute.js'
+import detectionRoute from './route/detectionRoute.js'
+import historyRoute from './route/historyRoute.js'
+
 
 
 dotenv.config();
@@ -24,7 +27,9 @@ app.use(authRoute);
 app.use(diseaseRoute);
 app.use(plantRoute);
 app.use(recommendRoute);
-// app.use(predictionRoute)
+app.use(detectionRoute);
+app.use(historyRoute);
+
 
 //handling routes yang tidak ditemukan
 app.use((req, res, next) => {

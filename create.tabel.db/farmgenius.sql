@@ -24,20 +24,13 @@ CREATE TABLE `disease` (
 );
 
 --Tabel detection
-CREATE TABLE `prediction` (
-  `prediction_id` varchar(16) primary key,
-  `user_id` varchar(255),
-  `plant_id` varchar(255),
-  `disease_id` varchar(255),
-  `img_url` varchar(255),
-  `accuration` float(15),
-  `created_at` datetime,
-  FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`),
-  FOREIGN KEY (`plant_id`) REFERENCES `plant` (`plant_id`),
-  FOREIGN KEY (`disease_id`) REFERENCES `disease` (`disease_id`)
+CREATE TABLE detection (
+  detection_id INT AUTO_INCREMENT PRIMARY KEY,
+  fileName VARCHAR(255) NOT NULL,
+  detectionDate TIMESTAMP NOT NULL,
+  detectionResult VARCHAR(255) NOT NULL,
+  imageUrl VARCHAR(255) NOT NULL
 );
-
---history
 
 -- Tabel recommendation_farm
 CREATE TABLE recommendation_farm (

@@ -76,9 +76,8 @@ const postDisease = async (req, res) => {
     }
 }
 
-
 export {
     getDisease,
     getByIdDisease,
-    postDisease,
+    postDisease
 }
