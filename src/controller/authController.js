@@ -12,7 +12,6 @@ const registration = async (req, res) => {
     const user_id = nanoid(16);
     const dates = new Date();
     try {
-        
         // Cek ketika email sudah digunakan
         const isEmailRegistered = await checkEmailRegistered(body.email);
         if (isEmailRegistered) {

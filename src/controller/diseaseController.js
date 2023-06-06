@@ -33,7 +33,7 @@ const getByIdDisease = async (req, res) => {
             res.status(404).json({
                 code: 404,
                 status: 'NOT FOUND',
-                message: 'Data tidak ditemukan',
+                message: 'Data penyakit tidak ditemukan',
                 data: null,
             });
         } else {

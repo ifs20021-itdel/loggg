@@ -2,13 +2,11 @@ const validate = (schema) => (req, res, next) => {
     const { error } = schema.validate(req.body);
 
     if (error) {
-        // buat variable kosong untuk menyimpan pesan error
         const errorMessages = {};
-        // iterasi untuk pengambilan path error
         error.details.forEach((detail) => {
             const path = detail.path[0];
             const message = detail.message.replace(/['"]/g, '');
-            // mengecek kondisi jika path sudah tersedia atau belum
+            // cek kondisi jika path sudah tersedia atau tidak
             if (errorMessages[path]) {
                 errorMessages[path].push(message);
             } else {
