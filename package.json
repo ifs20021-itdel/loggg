@@ -1,13 +1,12 @@
 {
-  "name": "farmgenius",
+  "name": "-",
   "version": "1.0.0",
-  "description": "API farmgenius application for disease detection",
+  "description": "-",
   "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "nodemon src/server.js"
   },
-  "author": "farmgenius@gmail.com",
   "license": "ISC",
   "dependencies": {
     "@google-cloud/storage": "^6.11.0",
